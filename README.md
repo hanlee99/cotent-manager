@@ -22,6 +22,19 @@ com.cms.content
 ├── dto             # 데이터 전송 객체 (Java 25 Record 사용)
 └── exception       # 공통 예외 처리 (GlobalExceptionHandler)
 
+## 📊 Data Model
+■ 데이터 모델
+Contents
+컬럼명	설명	데이터 타입
+id	고유 아이디	bigint primary key not null
+title	콘텐츠 제목	varchar(100) not null
+description	콘텐츠 내용	text
+view_count	조회수	bigint not null
+created_date	생성일	timestamp
+created_by	생성자	varchar(50) not null
+last_modified_date	수정일	timestamp
+last_modified_by	수정자	varchar(50)
+
 ## 🔑 Login & Auth
 - **로그인 방식:** (예: Spring Security 기반의 Session 로그인을 사용합니다.)
 - **사용자 계정:**
