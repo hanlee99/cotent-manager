@@ -9,6 +9,19 @@
 - **Database:** H2 Database (In-memory)
 - **ORM:** Spring Data JPA
 
+## 📂 Project Structure
+프로젝트의 유지보수와 가독성을 위해 **계층형 아키텍처(Layered Architecture)**를 채택하였습니다.
+
+Plaintext
+com.cms.content
+├── config          # Security, JPA Auditing 등 전역 설정
+├── controller      # REST API 엔드포인트 (ContentsController)
+├── service         # 비즈니스 로직 및 권한 검증
+├── repository      # JPA 데이터 접근 계층
+├── entity          # 데이터 모델 (Contents, BaseEntity)
+├── dto             # 데이터 전송 객체 (Java 25 Record 사용)
+└── exception       # 공통 예외 처리 (GlobalExceptionHandler)
+
 ## 🔑 Login & Auth
 - **로그인 방식:** (예: Spring Security 기반의 Session 로그인을 사용합니다.)
 - **사용자 계정:**
