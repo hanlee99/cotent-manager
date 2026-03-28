@@ -1,6 +1,7 @@
 package com.cms.content_manager.controller;
 
 import com.cms.content_manager.dto.ContentCreateRequest;
+import com.cms.content_manager.dto.ContentResponse;
 import com.cms.content_manager.entity.Contents;
 import com.cms.content_manager.service.ContentsService;
 import lombok.RequiredArgsConstructor;
@@ -28,13 +29,10 @@ public class ContentsController {
     }
 
     // 2. 전체 목록 조회
-    @GetMapping
-    public ResponseEntity<Page<Contents>> findAll(
-            @PageableDefault(size = 10, sort = "createdDate", direction = Sort.Direction.DESC) Pageable pageable) {
-
-        // 서비스에서 findAll(pageable)을 호출하도록 변경!
-        Page<Contents> list = contentsService.findAll(pageable);
-        return ResponseEntity.ok(list);
+    public ResponseEntity<Page<ContentResponse>> findAll(@PageableDefault(size = 10) Pageable pageable) {
+        Page<ContentResponse> responses = contentsService.findAll(pageable)
+                .map(ContentResponse::from);
+        return ResponseEntity.ok(responses);
     }
 
     // 3. 상세보기 (단건 조회)
