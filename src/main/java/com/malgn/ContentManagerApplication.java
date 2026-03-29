@@ -1,4 +1,4 @@
-package com.cms.content_manager;
+package com.malgn;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.cms.content_manager.entity;
+package com.malgn.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

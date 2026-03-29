@@ -1,4 +1,4 @@
-package com.cms.content_manager;
+package com.malgn;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

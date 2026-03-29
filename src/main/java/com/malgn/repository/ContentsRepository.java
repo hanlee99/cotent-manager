@@ -1,8 +1,6 @@
-package com.cms.content_manager.repository;
+package com.malgn.repository;
 
-import com.cms.content_manager.entity.Contents;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import com.malgn.entity.Contents;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

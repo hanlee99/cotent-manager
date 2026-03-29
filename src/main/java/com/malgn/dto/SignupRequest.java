@@ -1,6 +1,6 @@
-package com.cms.content_manager.dto;
+package com.malgn.dto;
 
-import com.cms.content_manager.entity.UserRole;
+import com.malgn.entity.UserRole;
 import lombok.Getter;
 import lombok.Setter;
 

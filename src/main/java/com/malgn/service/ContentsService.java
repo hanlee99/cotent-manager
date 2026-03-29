@@ -1,16 +1,13 @@
-package com.cms.content_manager.service;
+package com.malgn.service;
 
-import com.cms.content_manager.dto.ContentCreateRequest;
-import com.cms.content_manager.entity.Contents;
-import com.cms.content_manager.repository.ContentsRepository;
+import com.malgn.dto.ContentCreateRequest;
+import com.malgn.entity.Contents;
+import com.malgn.repository.ContentsRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor

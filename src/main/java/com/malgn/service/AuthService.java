@@ -1,8 +1,8 @@
-package com.cms.content_manager.service;
+package com.malgn.service;
 
-import com.cms.content_manager.entity.SiteUser;
-import com.cms.content_manager.entity.UserRole;
-import com.cms.content_manager.repository.UserRepository;
+import com.malgn.entity.SiteUser;
+import com.malgn.entity.UserRole;
+import com.malgn.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

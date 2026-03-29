@@ -1,4 +1,4 @@
-package com.cms.content_manager.dto;
+package com.malgn.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,7 +1,7 @@
-package com.cms.content_manager.controller;
+package com.malgn.controller;
 
-import com.cms.content_manager.dto.SignupRequest;
-import com.cms.content_manager.service.AuthService;
+import com.malgn.dto.SignupRequest;
+import com.malgn.service.AuthService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,4 +1,4 @@
-package com.cms.content_manager.config;
+package com.malgn.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

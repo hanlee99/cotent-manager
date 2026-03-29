@@ -1,7 +1,6 @@
-package com.cms.content_manager.dto;
+package com.malgn.dto;
 
-import com.cms.content_manager.entity.Contents;
-import jdk.jshell.Snippet;
+import com.malgn.entity.Contents;
 import lombok.*;
 
 import java.time.LocalDateTime;

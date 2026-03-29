@@ -1,6 +1,6 @@
-package com.cms.content_manager.repository;
+package com.malgn.repository;
 
-import com.cms.content_manager.entity.SiteUser;
+import com.malgn.entity.SiteUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

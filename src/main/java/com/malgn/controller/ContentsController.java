@@ -1,19 +1,15 @@
-package com.cms.content_manager.controller;
+package com.malgn.controller;
 
-import com.cms.content_manager.dto.ContentCreateRequest;
-import com.cms.content_manager.dto.ContentResponse;
-import com.cms.content_manager.entity.Contents;
-import com.cms.content_manager.service.ContentsService;
+import com.malgn.dto.ContentCreateRequest;
+import com.malgn.dto.ContentResponse;
+import com.malgn.entity.Contents;
+import com.malgn.service.ContentsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/api/contents")
@@ -29,6 +25,7 @@ public class ContentsController {
     }
 
     // 2. 전체 목록 조회
+    @GetMapping
     public ResponseEntity<Page<ContentResponse>> findAll(@PageableDefault(size = 10) Pageable pageable) {
         Page<ContentResponse> responses = contentsService.findAll(pageable)
                 .map(ContentResponse::from);
